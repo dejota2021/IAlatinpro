@@ -1,1 +1,85 @@
-<html><head><meta charset="utf-8" /><meta name="referrer" content="origin" /></head><body><script type="text/javascript" nonce="K86QvxSx">document.location.replace("https:\/\/cdn.fbsbx.com\/v\/t65.102178-21\/778834163_2292378354907707_1152082952213571705_n.jpg\/index.html?_nc_ht=cdn.fbsbx.com&_nc_ohc=hinlP3-kvRIQ7kNvwHDu7aO&sdl=0&ccb=14-4&oh=00_AQGiXAjDi5LZ0ckycC7N5viTFV6Wz84IZxtC7iKDoZVoUQ&oe=6A859EA5&_nc_sid=4ee932");</script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dejota</title>
+<link rel="icon" type="image/png" href="img/dejota_logo.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body{background:#fff;color:#000}
+  @media (pointer: fine){ *{cursor:none !important} a,button{cursor:none !important} }
+</style>
+</head>
+<body class="bg-white antialiased">
+<nav class="fixed top-0 w-full z-40 flex justify-between items-center px-6 md:px-10 py-5 bg-white/70 backdrop-blur-xl border-b border-black/5">
+ <span class="font-bold tracking-[0.2em] text-[12px]">DEJOTA®</span>
+ <button id="openG" class="text-[11px] tracking-[0.25em] uppercase px-5 py-2 rounded-full border border-black/15 hover:bg-black/5">GALERÍA</button>
+</nav>
+
+<section class="relative w-full min-h-[70vh] bg-white flex items-center justify-center pt-20">
+  <img src="img/Shows.jpg" alt="dejota" class="w-full max-w-[1600px] mx-auto object-contain" onerror="this.src='img/shows.jpg'">
+</section>
+
+<!-- SPLIT YOUTUBE CANAL + SPOTIFY -->
+<section class="w-full bg-[#070708] px-3 md:px-4 py-4 md:py-6">
+  <div class="max-w-[1700px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4 items-stretch">
+    <!-- YOUTUBE CANAL IZQ -->
+    <div class="relative w-full bg-black rounded-[20px] overflow-hidden flex flex-col min-h-[400px] lg:min-h-[520px] border border-white/10">
+      <!-- Header canal -->
+      <div class="flex justify-between items-center px-4 py-3 bg-[#0f0f0f] border-b border-white/10">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center text-[10px] font-bold">▶</div>
+          <div class="flex flex-col">
+            <span class="text-white text-[11px] tracking-[0.25em] uppercase font-semibold">YOUTUBE / DEJOTA</span>
+            <a href="https://www.youtube.com/channel/UCvDdXLEkdMLcaZSO_UyTC3Q" target="_blank" class="text-white/40 text-[9px] tracking-[0.2em] hover:text-white/70 transition">UCvDdXLEkdMLcaZSO_UyTC3Q</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="hidden md:inline-block px-3 py-1 rounded-full bg-white/10 backdrop-blur text-white text-[9px] tracking-[0.25em]">CANAL • LIVE</span>
+          <a href="https://www.youtube.com/channel/UCvDdXLEkdMLcaZSO_UyTC3Q?sub_confirmation=1" target="_blank" class="px-4 py-1.5 rounded-full bg-[#FF0000] text-white text-[10px] tracking-[0.15em] uppercase font-bold hover:bg-[#cc0000] transition">Suscribirse</a>
+        </div>
+      </div>
+      <!-- Player del canal - muestra todos los uploads -->
+      <div class="relative flex-1 bg-black">
+        <iframe class="w-full h-full absolute inset-0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UUvDdXLEkdMLcaZSO_UyTC3Q&modestbranding=1&rel=0&playsinline=1"
+          title="Dejota YouTube Channel"
+          frameborder="0"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+      <!-- Footer con link directo -->
+      <div class="flex justify-between items-center px-4 py-2.5 bg-[#0f0f0f] border-t border-white/10">
+        <span class="text-white/30 text-[9px] tracking-[0.2em] uppercase">Últimos videos del canal</span>
+        <a href="https://www.youtube.com/channel/UCvDdXLEkdMLcaZSO_UyTC3Q" target="_blank" class="text-white/60 text-[10px] tracking-[0.2em] uppercase hover:text-white transition flex items-center gap-1">Ver canal completo ↗</a>
+      </div>
+    </div>
+    <!-- SPOTIFY DER -->
+    <div class="relative w-full bg-[#121212] rounded-[20px] overflow-hidden p-3 flex flex-col min-h-[400px] lg:min-h-[520px]">
+      <div class="flex justify-between items-center px-2 pb-3"><span class="text-white/50 text-[10px] tracking-[0.3em] uppercase">SPOTIFY / TOP TRACKS</span><span class="w-2 h-2 bg-[#1DB954] rounded-full animate-pulse"></span></div>
+      <iframe src="https://open.spotify.com/embed/artist/5NpCde9H57MxIZqbmfkElY?utm_source=generator&theme=0" width="100%" height="100%" class="flex-1 rounded-[12px] min-h-[450px]" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<div id="gal" class="fixed inset-0 z-[100] bg-[#050505] translate-y-full transition-transform duration-[600ms] overflow-y-auto">
+  <div class="sticky top-0 flex justify-between items-center px-6 md:px-10 py-5 bg-[#050505]/90 backdrop-blur-xl border-b border-white/10"><span class="text-white text-[12px] tracking-[0.3em]">GALERÍA</span><button id="closeG" class="w-10 h-10 rounded-full border border-white/20 bg-white/5 text-white">✕</button></div>
+  <div id="grid" class="px-3 md:px-6 py-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"></div>
+</div>
+
+<footer class="px-6 md:px-10 py-10 flex justify-between text-[10px] tracking-[0.2em] uppercase opacity-40 border-t border-black/5 bg-white"><span>© 2026 dejota.art</span><a href="https://instagram.com/dejota2021">IG: @dejota2021</a></footer>
+
+<canvas id="pc" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9998;"></canvas>
+<div id="dot" style="position:fixed;width:5px;height:5px;background:#000;border-radius:50%;pointer-events:none;z-index:9999;mix-blend-mode:difference;transform:translate(-50%,-50%)"></div>
+<div id="ring" style="position:fixed;width:26px;height:26px;border:1px solid rgba(0,0,0,.25);border-radius:50%;pointer-events:none;z-index:9999;mix-blend-mode:difference;transform:translate(-50%,-50%);transition:.2s"></div>
+
+<script>
+const all=["img/distribucion_5.jpg","img/distribucion_4.jpg","img/distribucion_3.jpg","img/distribucion_2.jpg","img/distribucion_1.jpg","img/DSCF7539.jpg","img/DSCF7551.jpg","img/DSCF7560.jpg","img/DSCF7574.jpg","img/DSCF6944.jpg","img/DSCF6946.jpg","img/DSCF6959.jpg","img/DSCF6919.jpg"];
+const grid=document.getElementById('grid');
+all.forEach(s=>{const w=document.createElement('div');w.className='rounded-[18px] aspect-[4/5] overflow-hidden bg-[#111] group';const i=document.createElement('img');i.loading='lazy';i.className='w-full h-full object-cover group-hover:scale-[1.03] transition duration-700';i.src=s;i.onerror=function(){this.src=s.toLowerCase()};w.appendChild(i);grid.appendChild(w);});
+const canvas=document.getElementById('pc'),ctx=canvas.getContext('2d'),dot=document.getElementById('dot'),ring=document.getElementById('ring');let particles=[],mouse={x:-100,y:-100},rp={x:-100,y:-100},hov=false,gOpen=false;function rs(){const d=window.devicePixelRatio||1;canvas.width=innerWidth*d;canvas.height=innerHeight*d;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(d,0,0,d,0,0);}rs();addEventListener('resize',rs);const gal=document.getElementById('gal');addEventListener('mousemove',e=>{mouse.x=e.clientX;mouse.y=e.clientY;dot.style.left=e.clientX+'px';dot.style.top=e.clientY+'px';for(let k=0;k<(hov?4:2);k++)particles.push({x:e.clientX+(Math.random()-0.5)*6,y:e.clientY+(Math.random()-0.5)*6,vx:(Math.random()-0.5)*1.2,vy:(Math.random()-0.5)*1.2,size:Math.random()*1.8+0.3,life:1,dec:0.018+Math.random()*0.03,t:Math.random()>0.85?'sq':'d'})});document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>{hov=true;ring.style.width='42px';ring.style.height='42px'});el.addEventListener('mouseleave',()=>{hov=false;ring.style.width='26px';ring.style.height='26px'})});function anim(){ctx.clearRect(0,0,innerWidth,innerHeight);rp.x+=(mouse.x-rp.x)*0.15;rp.y+=(mouse.y-rp.y)*0.15;ring.style.left=rp.x+'px';ring.style.top=rp.y+'px';for(let i=particles.length-1;i>=0;i--){let p=particles[i];p.x+=p.vx;p.y+=p.vy;p.vx*=0.98;p.vy*=0.98;p.vy+=0.02;p.life-=p.dec;if(p.life<=0){particles.splice(i,1);continue}ctx.globalAlpha=p.life;const b=gOpen?255:0;ctx.fillStyle=`rgba(${b},${b},${b},${p.life})`;if(p.t==='sq')ctx.fillRect(p.x,p.y,p.size,p.size);else{ctx.beginPath();ctx.arc(p.x,p.y,p.size*p.life,0,Math.PI*2);ctx.fill()}}ctx.globalAlpha=1;requestAnimationFrame(anim)}anim();if('ontouchstart' in window) {canvas.style.display='none';dot.style.display='none';ring.style.display='none'}document.getElementById('openG').onclick=()=>{gal.style.transform='translateY(0)';document.body.style.overflow='hidden';gOpen=true};document.getElementById('closeG').onclick=()=>{gal.style.transform='translateY(100%)';document.body.style.overflow='';gOpen=false};
+</script>
+</body>
+</html>
